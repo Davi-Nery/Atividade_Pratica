@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificador de Triângulo</title>
+</head>
+<body>
+  <h1>Verificador de Tipos de Triângulo</h1>
+  <form action="/verificar" method="POST">
+    <label>Lado 1: <input type="number" name="lado1" step="any" required></label><br><br>
+    <label>Lado 2: <input type="number" name="lado2" step="any" required></label><br><br>
+    <label>Lado 3: <input type="number" name="lado3" step="any" required></label><br><br>
+    <button type="submit">Verificar</button>
+  </form>
+
+  <% if (resultado) { %>
+    <h2>Resultado: <%= resultado %></h2>
+  <% } %>
+</body>
+</html>
